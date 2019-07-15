@@ -12,6 +12,11 @@ int main(int argc, char **argv)
 	long *X = (long*)malloc(sizeof(long) * N);
 	long *Y = (long*)malloc(sizeof(long) * N);
 
+	if (X == NULL || Y == NULL) {
+	  printf("Failed to allocate memory: X=%p, Y=%p, %s\n", X, Y, strerror(errno));
+	  return -1;
+	}
+
 	//Initialize with random data
 	printf("Initializing with random data...\n"); fflush(stdout);
 
