@@ -7,7 +7,7 @@
 
 int main(int argc, char **argv)
 {
-	long N = 1000000000;
+	long N = 100000000;
 	float sum = 0.0;
 	float *X = (float*)malloc(sizeof(float) * N);
 	float *Y = (float*)malloc(sizeof(float) * N);
