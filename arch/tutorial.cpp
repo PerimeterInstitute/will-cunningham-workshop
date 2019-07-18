@@ -81,6 +81,7 @@ int main(int argc, char **argv)
 	printf("Average Degree: %.6f\n", average_degree);
 
 	//Measure the clustering
+	//We will come back to this in the next lecture
 	
 	//Greedy Routing
 	unsigned npaths = N;
