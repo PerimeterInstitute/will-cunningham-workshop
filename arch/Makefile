@@ -12,16 +12,16 @@ branch_elimination:
 	g++ -o branch_elimination stopwatch.cpp branch_elimination.cpp $(CFLAGS)
 
 openmp_loop:
-	g++ -o openmp_loop stopwatch.cpp openmp_loop.cpp -O0 -fopenmp
+	g++ -o openmp_loop stopwatch.cpp openmp_loop.cpp $(CFLAGS) -fopenmp
 
 openmp_double_loop:
-	g++ -o openmp_double_loop stopwatch.cpp openmp_double_loop.cpp -O0 -fopenmp
+	g++ -o openmp_double_loop stopwatch.cpp openmp_double_loop.cpp $(CFLAGS) -fopenmp
 
 openmp_reduction:
-	g++ -o openmp_reduction stopwatch.cpp openmp_reduction.cpp -O0 -fopenmp
+	g++ -o openmp_reduction stopwatch.cpp openmp_reduction.cpp $(CFLAGS) -fopenmp
 
 openmp_vectorized:
-	g++ -o openmp_vectorized stopwatch.cpp openmp_vectorized.cpp -O0 -fopenmp -mavx2 -march=core-avx2
+	g++ -o openmp_vectorized stopwatch.cpp openmp_vectorized.cpp $(CFLAGS) -fopenmp -mavx2 -march=core-avx2
 
 tutorial:
 	g++ -o tutorial stopwatch.cpp tutorial.cpp $(CFLAGS)
