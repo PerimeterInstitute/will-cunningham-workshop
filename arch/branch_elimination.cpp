@@ -7,18 +7,10 @@
 
 int main(int argc, char **argv)
 {
-	long N = 1000000000;
+	long N = 100000000;
 	float sum = 0.0;
 	float *X = (float*)malloc(sizeof(float) * N);
 	float *Y = (float*)malloc(sizeof(float) * N);
-
-	/*float x = -0.3;
-	//float y = (~((*(int*)&x) >> 31)) * x;
-	float y = -(~((*(int*)&x) >> 31)) * x;
-	printf("x: %f\n", x);
-	printf("y: %f\n", y);
-	fflush(stdout);*/
-
 
 	//Initialize with random data
 	printf("Initializing with random data...\n"); fflush(stdout);

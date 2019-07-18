@@ -7,7 +7,7 @@
 
 int main(int argc, char **argv)
 {
-	long N = 1000000000;
+	long N = 100000000;
 	long mask = 391759154;
 	long *X = (long*)malloc(sizeof(long) * N);
 	long *Y = (long*)malloc(sizeof(long) * N);
